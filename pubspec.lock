@@ -90,6 +90,7 @@ packages:
     source: hosted
     version: "3.0.6"
 <<<<<<< HEAD
+<<<<<<< HEAD
   dartz:
     dependency: "direct main"
     description:
@@ -100,6 +101,8 @@ packages:
     version: "0.10.1"
 =======
 >>>>>>> 2097ca758c00f26376ae71c061f4dd8db2be1354
+=======
+>>>>>>> origin/main
   fake_async:
     dependency: transitive
     description:

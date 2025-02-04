@@ -1,8 +1,8 @@
 import 'package:blog_projectbased/core/themes/app_pallet.dart';
-import 'package:blog_projectbased/features/auth/presentation/pages/widgets/auth_feild.dart';
-import 'package:blog_projectbased/features/auth/presentation/pages/widgets/auth_gradient_butoon.dart';
+import 'package:blog_projectbased/features/auth/presentation/pages/login_page.dart';
+import 'package:blog_projectbased/features/auth/presentation/widgets/auth_feild.dart';
+import 'package:blog_projectbased/features/auth/presentation/widgets/auth_gradient_butoon.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignUpPage extends StatefulWidget {
   static route() => MaterialPageRoute(
@@ -34,7 +34,7 @@ class _SignUpPageState extends State<SignUpPage> {
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
-        padding: const EdgeInsets.only(right: 15.0, left: 15.0, top: 90),
+        padding: const EdgeInsets.all(15.0),
         child: Form(
           key: formKey,
           child: Column(
@@ -72,22 +72,35 @@ class _SignUpPageState extends State<SignUpPage> {
               const SizedBox(
                 height: 20,
               ),
-              const AuthGradientButoon(),
+              const AuthGradientButoon(
+                buttonText: 'Sign up', onPressed: () {  },
+              ),
               const SizedBox(
                 height: 20,
               ),
-              RichText(
-                text: TextSpan(
-                  text: 'Already have an account?',
-                  style: Theme.of(context).textTheme.titleMedium,
-                  children: [
-                    TextSpan(
-                      text: ' Sign In',
-                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          color: AppPallete.gradient2,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ],
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    LoginPage.route(),
+                  );
+                },
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Already have an account?',
+                    style: Theme.of(context).textTheme.titleMedium,
+                    children: [
+                      TextSpan(
+                        text: ' Sign In',
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleMedium
+                            ?.copyWith(
+                                color: AppPallete.gradient2,
+                                fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
                 ),
               )
             ],

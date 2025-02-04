@@ -63,11 +63,7 @@ class _LoginState extends State<LoginPage> {
               const SizedBox(
                 height: 20,
               ),
-<<<<<<< HEAD
-              AuthGradientButoon(buttonText: 'Sign in', onPressed: () {  },),
-=======
-              const AuthGradientButoon(buttonText: 'Sign in'),
->>>>>>> 2097ca758c00f26376ae71c061f4dd8db2be1354
+              const AuthGradientButoon(buttonText: 'Sign in', onPressed: () {  },),
               const SizedBox(
                 height: 20,
               ),
