@@ -1,14 +1,23 @@
 name: blog_projectbased
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
   sdk: ^3.5.4
 
 dependencies:
+<<<<<<< HEAD
+  dartz: ^0.10.1
+
+=======
+>>>>>>> 2097ca758c00f26376ae71c061f4dd8db2be1354
+  flutter_bloc: ^9.0.0
+  supabase: ^2.6.2
+  fpdart: ^1.1.1
   flutter:
     sdk: flutter
+  supabase_flutter: ^2.8.3
 
 dev_dependencies:
   flutter_test:
