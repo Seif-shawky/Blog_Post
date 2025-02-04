@@ -7,14 +7,8 @@ environment:
   sdk: ^3.5.4
 
 dependencies:
-<<<<<<< HEAD
-<<<<<<< HEAD
   dartz: ^0.10.1
 
-=======
->>>>>>> 2097ca758c00f26376ae71c061f4dd8db2be1354
-=======
->>>>>>> origin/main
   flutter_bloc: ^9.0.0
   supabase: ^2.6.2
   fpdart: ^1.1.1
